@@ -9,3 +9,34 @@ mysql> show databases;
 | sys                |
 +--------------------+
 5 rows in set (0.01 sec)
+
+
+mysql> show tables;
++--------------------+
+| Tables_in_estoque  |
++--------------------+
+| produtos           |
+| quantidade_produto |
++--------------------+
+
+
+mysql> SHOW COLUMNS FROM produtos;
++-------+--------------+------+-----+---------+----------------+
+| Field | Type         | Null | Key | Default | Extra          |
++-------+--------------+------+-----+---------+----------------+
+| id    | int          | NO   | PRI | NULL    | auto_increment |
+| nome  | varchar(255) | NO   |     | NULL    |                |
++-------+--------------+------+-----+---------+----------------+
+2 rows in set (0.01 sec)
+
+
+mysql> SHOW COLUMNS FROM quantidade_produto;
++--------------+------+------+-----+---------+-------+
+| Field        | Type | Null | Key | Default | Extra |
++--------------+------+------+-----+---------+-------+
+| produto_id   | int  | YES  | MUL | NULL    |       |
+| quantidade   | int  | YES  |     | NULL    |       |
+| data_entrada | date | YES  |     | NULL    |       |
+| data_saida   | date | YES  |     | NULL    |       |
++--------------+------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
