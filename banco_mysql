@@ -29,7 +29,6 @@ mysql> SHOW COLUMNS FROM produtos;
 +-------+--------------+------+-----+---------+----------------+
 2 rows in set (0.01 sec)
 
-
 mysql> SHOW COLUMNS FROM quantidade_produto;
 +--------------+------+------+-----+---------+-------+
 | Field        | Type | Null | Key | Default | Extra |
